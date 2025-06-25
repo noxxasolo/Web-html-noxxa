@@ -1,0 +1,212 @@
+<!DOCTYPE html>  <html lang="id">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <title>Aboutme</title>  
+  <link rel="stylesheet" href="style.css" />  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />  
+</head>  
+<body>  
+  <div class="page" id="home">  
+    <img src="https://files.catbox.moe/fs9oh0.jpg" alt="Logo" class="logo floating" />  
+    <audio id="bg-music" src="https://files.catbox.moe/z4b1u2"></audio>  
+    <button onclick="toggleMusic()">Play Music</button>  <!-- Pemutar Musik -->  
+<div id="music-player" style="display:none; margin-top:10px; text-align:center;">  
+  <p id="music-title"><strong>Judul Lagu:</strong> DJ STECU STECU X PICA PICA SLOW</p>  
+  <p id="music-artist"><strong>Penyanyi:</strong> NDAA FVNK</p>  
+  <input type="range" id="seek-bar" value="0" style="width:80%;" />  
+  <p><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>  
+  <button onclick="stopMusic()">Stop</button>  
+</div>  
+
+<nav>  
+</nav>  
+<p id="typed-text"></p>  
+<script>
+
+const text = "Halo! Saya adalah Web Shop Noxxa Kamu mau menbeli produk yang ada? Ke owner Saja ya... Produk nya scroll aja kebawah...";
+const typedText = document.getElementById("typed-text");
+let index = 0;
+
+function typeEffect() {
+if (index < text.length) {
+typedText.innerHTML += text.charAt(index);
+index++;
+setTimeout(typeEffect, 50); // kecepatan ngetik, ubah 40 jadi lebih kecil kalau mau lebih cepet
+}
+}
+
+window.onload = typeEffect;
+</script>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center; margin: 10px 0;">
+<a href="https://t.me/noxxasoloo" target="_blank">
+<img src="https://files.catbox.moe/xltp58.jpg" alt="Telegram" class="icon floating" />
+</a>
+<a href="https://wa.me/6283167371689" target="_blank">
+<img src="https://files.catbox.moe/ju5m1g.jpg" alt="WhatsApp" class="icon floating" />
+</a>
+</div>
+<p><strong>Bahasa Pemrograman yang Dikuasai:</strong></p>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+<img src="https://files.catbox.moe/jiw6da.jpg" alt="JavaScript" class="icon floating" />
+<img src="https://files.catbox.moe/zlyx85.jpg" alt="Css" class="icon floating" />
+</div>
+</div>
+<div class="page" id="partner">
+  <h2>LIST PRODUK NOXXA</h2>
+  <div class="produk-list">
+
+    <!-- SCRIPT GALAXY MD -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="SCRIPT GALAXY MD" class="floating" />
+      <p><strong>SCRIPT GALAXY MD</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- FULL UPDATE</li>
+        <li>- GET NO ENC SCRIPT</li>
+        <li>- FREE PANEL UNLI KALAU ADA</li>
+      </ul>
+      <p>Harga: Rp 30.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Press this to buy</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Join Room</button></a>
+    </div>
+
+    <!-- PARTNER PRIBADI -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="PARTNER PRIBADI" class="floating" />
+      <p><strong>PARTNER PRIBADI</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- GET PARTNER SCRIPT ETERNAL GALAXY</li>
+        <li>- GET SCRIPT ETERNAL GALAXY NO ENC VERSION SEBELUMNYA</li>
+        <li>- GET SCRIPT DATABASE </li>
+        <li>- GET SCRIPT OBF NO ENC</li>
+        <li>- GET BANYAK BASE BOT</li>
+        <li>- GET FUNCTION NEW SETIAP UPDATE</li>
+        <li>- GET ADMIN ROOM</li>
+        <li>- GET PROMOTED</li>
+        <li>- DI BANTU NAIK NAMA</li>
+        <li>- DI BANTU FIX ERROR KALO GAK SIBUK</li>
+        <li>- FULL PENGAJARAN</li>
+        <li>- FULL TUTOR</li>
+      </ul>
+      <p>Harga: Rp 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Press this to buy</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Join Room</button></a>
+    </div>
+
+    <!-- PARTNER TRAZ -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="JASA FIXED" class="floating" />
+      <p><strong>JASA FIXED</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- DILIHAT DENGAN ERROR NYA</li>
+      </ul>
+      <p>Harga: Rp 10.000 - 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Press this to buy</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Join Room</button></a>
+    </div>
+
+    <!-- PARTNER GALAXY -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="PARTNER GALAXY" class="floating" />
+      <p><strong>PARTNER GALAXY</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- GET MODERATOR SC ETERNAL GALAXY</li>
+        <li>- GET SC ETERNAL GALAXY NO ENC FULL UPDATE</li>
+        <li>- GET SC DATABASE</li>
+        <li>- GET SCRIPT GALAXY MD VIA TELE BISA JUAL SC/PAKE</li>
+        <li>- GET SC OBF NO ENC</li>
+        <li>- GET FUNCTION SETIAP UPDATE</li>
+        <li>- GET PEMBELAJARAN MENGENAI TENTANG SCRIPT</li>
+        <li>- DI KASIH TUTORIAL</li>
+        <li>- DI BANTU FIX SC LU KALO NGGAK SIBUK</li>
+        <li>- GET ADMIN CHANNEL </li>
+        <li>- GET ADMIN ROOM PUBLIC</li>
+        <li>- GET PROMOTED</li>
+        <li>- DI BANTU NAIK NAMA</li>
+        <li>- DI BANTU TERUS - TERUSAN</li>
+        <li>- BOLEH MINTA BUATKAN PLUGIN/CASE YANG LU MAU</li>
+      </ul>
+      <p>Harga: Rp 80.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Press this to buy</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Join Room</button></a>
+    </div>
+
+    <!-- SCRIPT ETERNAL GALAXY -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="SCRIPT ETERNAL GALAXY" class="floating" />
+      <p><strong>SCRIPT ETERNAL GALAXY</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- FREE UPDATE PERMANEN</li>
+        <li>- BISA OPEN MURBUG</li>
+        <li>- BISA OPEN JASA BUG</li>
+        <li>- BISA OPEN OWNER BUG</li>
+        <li>- BISA OPEN ADMIN BUG</li>
+        <li>- ADA FITUR MD NYA</li>
+      </ul>
+      <p>Harga: Rp 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Press this to buy</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Join Room</button></a>
+    </div>
+
+  </div>
+
+  <nav style="margin-top: 20px;">
+    <button onclick="scrollToHome()">Back</button>
+  </nav>
+</div>
+ 
+  </nav>  
+</div>    <script>  
+    const music = document.getElementById("bg-music");  
+    const musicPlayer = document.getElementById("music-player");  
+    const seekBar = document.getElementById("seek-bar");  
+    const currentTimeEl = document.getElementById("current-time");  
+    const durationEl = document.getElementById("duration");  
+  
+    function toggleMusic() {  
+      if (music.paused) {  
+        music.play();  
+        musicPlayer.style.display = "block";  
+      } else {  
+        music.pause();  
+      }  
+    }  
+  
+    function stopMusic() {  
+      music.pause();  
+      music.currentTime = 0;  
+    }  
+  
+    music.addEventListener("loadedmetadata", () => {  
+      seekBar.max = music.duration;  
+      durationEl.textContent = formatTime(music.duration);  
+    });  
+  
+    music.addEventListener("timeupdate", () => {  
+      seekBar.value = music.currentTime;  
+      currentTimeEl.textContent = formatTime(music.currentTime);  
+    });  
+  
+    seekBar.addEventListener("input", () => {  
+      music.currentTime = seekBar.value;  
+    });  
+  
+    function formatTime(time) {  
+      const minutes = Math.floor(time / 60);  
+      const seconds = Math.floor(time % 60).toString().padStart(2, "0");  
+      return `${minutes}:${seconds}`;  
+    }  
+  
+    function scrollToProduk() {  
+      document.getElementById("produk").scrollIntoView({ behavior: "smooth" });  
+    }  
+  
+    function scrollToHome() {  
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });  
+    }  
+  </script>  </body>  
+</html>
